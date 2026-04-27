@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { ShieldAlert, LayoutDashboard, Truck, Settings, Users } from 'lucide-react';
+import { ShieldAlert, LayoutDashboard, Truck, LogOut, Users } from 'lucide-react';
 
 const Sidebar = () => {
   return (
@@ -49,9 +49,12 @@ const Sidebar = () => {
       </nav>
 
       <div className="p-4 border-t border-gray-800">
-        <button className="flex items-center space-x-3 px-4 py-3 text-gray-400 hover:text-white w-full transition-colors rounded-lg hover:bg-gray-800">
-          <Settings className="w-5 h-5" />
-          <span className="font-medium">Settings</span>
+        <button 
+          onClick={() => alert('Logout clicked!')}
+          className="flex items-center space-x-3 px-4 py-3 text-red-400 hover:text-white hover:bg-red-500/20 w-full transition-colors rounded-lg"
+        >
+          <LogOut className="w-5 h-5" />
+          <span className="font-medium">Logout</span>
         </button>
       </div>
     </div>
