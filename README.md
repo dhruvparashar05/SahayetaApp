@@ -1,4 +1,4 @@
-# 🚨 SahayetaApp – Emergency Response System
+# 🚨 SahayetaApp – CrisisLink AI Emergency Response System
 
 ## 📌 Overview
 
@@ -10,13 +10,8 @@ The platform connects **mobile users (guests)** with a **centralized command das
 
 ## 🎯 Problem Statement
 
-In emergency situations:
-
-* Communication is delayed
-* Response coordination is inefficient
-* No centralized system exists to track incidents
-
-👉 SahayetaApp solves this by providing a **real-time unified crisis management platform**.
+Emergency response in hospitality and urban environments is often hindered by delayed reporting, poor coordination, and lack of centralized visibility.
+**SahayetaApp addresses these challenges through real-time crisis communication, location-based alerts, and a unified command system.**
 
 ---
 
@@ -78,7 +73,7 @@ In emergency situations:
 
 ## 🧩 Architecture
 
-```
+```plaintext
 📱 Mobile App (React Native - Expo)
         ↓
 ☁️ Firebase Firestore (Realtime DB)
@@ -87,6 +82,18 @@ In emergency situations:
         ↓
 🗺️ Google Maps API (Visualization)
 ```
+
+---
+
+## 🌐 Live Demo
+
+### 🖥️ Web Dashboard
+
+👉 https://sahayeta-app.vercel.app/
+
+### 📱 Mobile App (Expo Build)
+
+👉 https://expo.dev/accounts/dhruvparashar05/projects/mobile-app/builds/23cc32d6-45c0-41f2-97ce-a5f42ec156a5
 
 ---
 
@@ -107,7 +114,7 @@ In emergency situations:
 
 ### 1️⃣ Clone Repository
 
-```
+```bash
 git clone https://github.com/your-username/sahayeta-app.git
 cd sahayeta-app
 ```
@@ -116,7 +123,7 @@ cd sahayeta-app
 
 ### 2️⃣ Setup Web Dashboard
 
-```
+```bash
 cd web-dashboard
 npm install
 npm run dev
@@ -126,7 +133,7 @@ npm run dev
 
 ### 3️⃣ Setup Mobile App
 
-```
+```bash
 cd mobile-app
 npm install
 npm start
@@ -138,27 +145,14 @@ Scan QR using **Expo Go**
 
 ## 🔑 Environment Variables
 
-Create `.env` file in web-dashboard:
+Create `.env` file in `web-dashboard`:
 
-```
+```env
 VITE_FIREBASE_API_KEY=your_key
 VITE_FIREBASE_AUTH_DOMAIN=your_domain
 VITE_FIREBASE_PROJECT_ID=your_project_id
 VITE_GOOGLE_MAPS_API_KEY=your_maps_key
 ```
-
----
-
-## 🌐 Deployment
-
-### Web Dashboard
-
-* Hosted on **Vercel**
-
-### Mobile App
-
-* Run via **Expo**
-* Share using QR code or APK build
 
 ---
 
