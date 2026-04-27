@@ -102,7 +102,7 @@ const mapOptions = {
 const MapView = ({ alerts }) => {
   const { isLoaded, loadError } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyD0Q3VtI8OgXT-5It5mGPkK4iIY2NUWPp4"
+    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY
   });
 
   const [map, setMap] = useState(null);
